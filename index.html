@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesquisa KIRO ACTIVATION DAY Upd8</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap estreito">
+    <h1 id="titulo">Pesquisa KIRO ACTIVATION DAY Upd8</h1>
+    <p id="intro"></p>
+  </div>
+</header>
+<main class="wrap estreito">
+  <form id="form">
+    <section class="card">
+      <h2>Seus dados</h2>
+      <div class="grade">
+        <label class="campo">Nome
+          <input type="text" name="nome" maxlength="120" autocomplete="name" required>
+        </label>
+        <label class="campo">Empresa
+          <input type="text" name="empresa" maxlength="120" autocomplete="organization" required>
+        </label>
+        <label class="campo largo">E-mail
+          <input type="email" name="email" maxlength="160" autocomplete="email" required>
+        </label>
+      </div>
+    </section>
+
+    <div id="perguntas"></div>
+
+    <p id="aviso" class="aviso" role="alert" hidden></p>
+    <button type="submit" id="enviar">Enviar respostas</button>
+  </form>
+
+  <section id="obrigado" class="card centro" hidden>
+    <h2>Obrigado pela sua resposta!</h2>
+    <p class="mut">Suas respostas foram enviadas com sucesso.</p>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="questions.js"></script>
+<script src="api.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
